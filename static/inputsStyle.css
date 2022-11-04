@@ -1,0 +1,449 @@
+body{
+	margin: 0;
+	background-color: #002060;
+}
+
+
+/* Navigation */ 
+.main-nav {
+	position: fixed;
+	width:100%;
+	top: 0;
+	right: 0;
+  margin: 0;
+  padding: 0;
+
+	z-index: 100;
+  background-color: #002060;
+	border-bottom:4px solid #000;
+}
+
+.main-nav li {
+	display: block;
+	list-style:none;
+	float: right;
+  padding: 12px;
+  
+  text-decoration: none;
+  font-size: 17px;
+	width: calc((100% - 250px)/5);
+	height: 30px;
+  text-align: center;
+}
+
+.main-nav li a {
+  color: white;
+  text-align: center;
+  font-family: Arial Black;
+  text-decoration: none;
+}
+
+.main-nav li:hover{
+	background-color: #fff;
+  box-shadow: 0px 15px 20px #8f8f8f;
+	
+  transform: translateY(-1px);
+
+}
+
+.main-nav li:hover a{
+	color: #002060;
+
+}
+
+.main-nav 
+.logo {
+	display: inline-block;
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+	width: 200px;
+	
+}
+
+@media screen and (max-width: 900px) {
+  .main-nav li {
+    float: right;
+    display: block;
+    width: 10%;
+    text-align: left;
+		height: 30px;
+  }
+	.main-nav li a
+	{
+  	display: none;
+	}
+	.main-nav li:hover
+	{
+		display: none;
+	}
+}
+
+/* First Section */
+.inputsOne{
+	margin-top: 30px;
+	background-image: url("images/carDrivingRed.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 25% 50%;
+}
+
+.inputBlockLong{
+	background-color: white;
+  position: absolute;
+	display: block;
+  height: 15%;
+  width: 100%;
+	top: 40px;
+	padding: 2%;
+}
+
+.box{
+	background-color: orange;
+  position: relative;
+  height: 15%;
+  width: 10%;
+}
+
+.box-top{
+	top: 12%; bottom: 0; left: 3%; right: 0;
+}
+
+.label{
+	margin: 0px;
+	color: #002060;
+	position:relative;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 2.6vw;
+	text-align: left;
+}
+
+.label a{
+	text-decoration: underline;
+}
+
+.label-top{
+  top: 13%; bottom: 0; left: 3%; right: 0;
+  height: 10%; /*requires explicit height*/
+	width: 30%;
+}
+
+.inputBox{
+	position: absolute;
+	font-size: 30px;
+	border: 3px solid #555;
+  box-shadow: 0px 15px 20px #8f8f8f;
+}
+
+.inputBox-A{
+	height: 30%; width: 25%;
+	top: 35%; bottom: 0; left: 35%; right: 0;
+}
+
+.inputBox-B{
+	height: 30%; width: 25%;
+	top: 35%; bottom: 0; left: 62%; right: 0;
+}
+
+.input{
+	font-family: "Consolas";
+	font-style: italic;
+	position: absolute;
+	font-size: 30px;
+	border: 0px;
+
+	height: 90%; width: 70%;
+	top: 0%; bottom: 0; left: 55px; right: 0;
+
+	outline: none;
+}
+
+.icons {
+	position: absolute;
+	display: block;
+	height: 95%;
+	width: auto;
+
+	top: 0%; bottom: 0; left: 0; right: 0%;
+}
+
+/* Second Section */
+.inputBlockMain{
+	background-color: white;
+  position: absolute;
+	display: block;
+  height: 55%;
+  width: 50%;
+	top: 35%; left: 10%;
+	
+	border-radius: 50px;
+	padding: 2%;
+}
+
+.inputMain{
+	font-family: "Consolas";
+	font-style: italic;
+	/* color: gray; */
+	position: relative;
+	font-size: 30px;
+	border: 3px solid #555;
+  box-shadow: 0px 15px 20px #8f8f8f;
+}
+
+.labelMain{
+	position:relative;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: left;
+}
+
+.bigIconA{
+	position: absolute;
+	width: 30%;
+	height: auto;
+	top: 15%; bottom: 0; left: 5%; right: 0;
+}
+
+.inputBox-C{
+	position: absolute;
+	height: 30%; width: 50%;
+	top: 10%; bottom: 0; left: 40%; right: 0;
+}
+
+.input-A{
+	height: 30%; width: 100%;
+}
+
+.inputBox-D{
+	position: absolute;
+	height: 30%; width: 50%;
+	top: 40%; bottom: 0; left: 40%; right: 0;
+}
+
+.input-B{
+	height: 30%; width: 100%;
+}
+
+.inputBox-E{
+	position: absolute;
+	height: 33%; width: 81.5%;
+	top: 70%; bottom: 0; left: 10%; right: 0;
+}
+
+.input-C{
+	height: 30%; width: 100%;
+}
+
+.infoBlock{
+	background-color: white;
+  position: absolute;
+  height: 55%;
+  width: 22%;
+	
+	border-radius: 50px;
+	padding: 2%;
+}
+
+.iC{
+	top: 35%; left: 70%;
+}
+
+.infoImg{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 70%;
+	height: auto;
+}
+
+.infoTitle{
+	text-align: center;
+	color: black;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 3vh;
+}
+
+.infoDesc{
+	text-align: center;
+	color: darkgray;
+	font-family: "Arial Black";
+	font-size: 3vh;
+}
+
+/* Third Section */
+.inputsTwo{
+	margin-top: 50px;
+	background-image: url("images/gearSpinning.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 25% 50%;
+}
+
+.inputBlockLong-A{
+	background-color: white;
+  position: absolute;
+	display: block;
+  height: 15%;
+  width: 100%;
+	top: 105%;
+	padding: 2%;
+}
+
+.box-mid{
+	top: 8%; bottom: 0; left: 83%; right: 0;
+}
+.label-mid{
+	text-align: right;
+  top: 8%; bottom: 0; left: 63%; right: 0;
+  height: 10%; /*requires explicit height*/
+	width: 30%;
+}
+
+.inputBox-F{
+	height: 30%; width: 25%;
+	top: 35%; bottom: 0; left: 5%; right: 0;
+}
+
+.inputBox-G{
+	height: 30%; width: 25%;
+	top: 35%; bottom: 0; left: 32%; right: 0;
+}
+
+.inputBlockMain-A{
+	background-color: white;
+  position: absolute;
+	display: block;
+  height: 55%;
+  width: 50%;
+	top: 135%; left: 40%;
+	
+	border-radius: 50px;
+	padding: 2%;
+}
+
+.iA{
+	top: 135%; left: 5%;
+}
+
+.input-H{
+	height: 30%; width: 100%;
+	top: 35%; bottom: 0; left: 0%; right: 0;
+}
+
+/* Final Section */
+.inputsThree{
+	width: 100%;
+	height: 30vh;
+	background-color: white;
+}
+
+.labelBottom{
+	top: 20%;
+	text-align: center;
+}
+
+.labelBottom input{
+	position: absolute;
+  /* lets have the pirate 20px from the left */
+	left:42%;
+	top: 100%;
+	font-size: 16px;
+  /* margin-top: 63vh; margin-bottom: 0; margin-left: 60%; right: 0; */
+	
+  height: 50px; /* 63% requires explicit height*/
+  width: 15%;
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+	box-shadow: 0 0 10px orange;
+}
+
+
+/* Credits */
+
+.aboutUs{
+	padding-left: 10px;
+	display: inline-block;
+	color: white;
+	text-align: left;
+	width: 30%;
+	
+	top: 30%;
+}
+
+.minorLinks{
+	display: block;
+	position: absolute;
+	color: white;
+	text-align: center;
+	width: 30%;
+	top: 243%;
+  left: 35%;
+}
+
+.minorLinks a{
+  color: white;
+	text-decoration: none;
+}
+
+.minorLinks a:hover{
+	text-decoration: underline;
+}
+
+.thanks{
+	padding-right: 10px;
+	display: inline-block;
+	float: right;
+	color: white;
+	text-align: right;
+	width: 30%;
+	top: 315%;
+	right: 0%;
+}
+
+@media screen and (max-width: 500px) {
+	.aboutUs{
+		font-size: 15px;
+	}
+	.minorLinks{
+		display: block;
+		position: absolute;
+		color: white;
+		text-align: center;
+		width: 30%;
+		top: 323%;
+	  left: 35%;
+		font-size: 15px;
+	}
+	.thanks{
+		
+		font-size: 15px;
+	}
+	
+}
+
+/* Reveal */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,267 @@
+body{
+	margin: 0;
+	background-color: #002060;
+}
+
+
+/* Navigation */ 
+.main-nav {
+	position: fixed;
+	width:100%;
+	top: 0;
+	right: 0;
+  margin: 0;
+  padding: 0;
+
+	z-index: 100;
+  background-color: #002060;
+	border-bottom:4px solid #000;
+}
+
+.main-nav li {
+	display: block;
+	list-style:none;
+	float: right;
+  padding: 12px;
+  
+  text-decoration: none;
+  font-size: 17px;
+	width: calc((100% - 250px)/5);
+	height: 30px;
+  text-align: center;
+}
+
+.main-nav li a {
+  color: white;
+  text-align: center;
+  font-family: Arial Black;
+  text-decoration: none;
+}
+
+.main-nav li:hover{
+	background-color: #fff;
+  box-shadow: 0px 15px 20px #8f8f8f;
+	
+  transform: translateY(-1px);
+
+}
+
+.main-nav li:hover a{
+	color: #002060;
+
+}
+
+.main-nav 
+.logo {
+	display: inline-block;
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+	width: 200px;
+	
+}
+
+@media screen and (max-width: 900px) {
+  .main-nav li {
+    float: right;
+    display: block;
+    width: 10%;
+    text-align: left;
+		height: 30px;
+  }
+	.main-nav li a
+	{
+  	display: none;
+	}
+	.main-nav li:hover
+	{
+		display: none;
+	}
+}
+
+/* First Section */
+
+.resultsSection{
+	margin-top: 40px;
+	background-image: url("images/carSide.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 25% 50%;
+}
+
+.valLabel{
+	color: #002060;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 8vw;
+	text-align: center;
+	
+  position:absolute;
+	
+  top: 20%; bottom: 0; left: 0%; right: 0;
+  height: 50px; /*requires explicit height*/
+	width: 98%;
+	border-width: 2vw;
+}
+
+.resultsBlock{
+	background-color: rgb(219,219,219);
+	box-shadow: 0px 25px 50px #8f8f8f;
+  position: absolute;
+  height: 11vw;
+  width: 55%;
+
+	top:50%;
+	left:20%;
+	
+	border-radius: 50px;
+	padding: 2%;
+}
+
+.dollarSign{
+	top:0px;
+	float:left;
+	margin: 0px;
+	color: #002060;
+	position:relative;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 8vw;
+	text-align: left;
+}
+
+.countUp{
+	top: 0px;
+	float:right;
+	margin: 0px;
+	color: #002060;
+	position:relative;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 8vw;
+	text-align: right;
+}
+
+/* Final About Section */
+.aboutSection{
+	background-color: white;
+  height: auto;
+  width: auto;
+	
+	padding: 2%;
+}
+
+.aboutTit{
+	color: #002060;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 4vw;
+	text-align: center;
+}
+
+.intro{
+	font-family: "Consolas";
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1vw;
+	text-align: left;
+}
+
+.fileDownload{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align:center;
+}
+.figDesc{
+	color: #002060;
+	font-family: "Arial Black";
+	text-transform: uppercase;
+	font-size: 2vh;
+	text-align: center;
+	
+  position:relative;
+	text-decoration: none;
+  height: 50px; /*requires explicit height*/
+	border-width: 2vw;
+}
+/* Credits */
+
+.aboutUs{
+	padding-left: 10px;
+	display: inline-block;
+	color: white;
+	text-align: left;
+	width: 30%;
+	
+	top: 30%;
+}
+
+.minorLinks{
+	display: block;
+	position: absolute;
+	color: white;
+	text-align: center;
+	width: 30%;
+	top: 243%;
+  left: 35%;
+}
+
+.minorLinks a{
+  color: white;
+	text-decoration: none;
+}
+
+.minorLinks a:hover{
+	text-decoration: underline;
+}
+
+.thanks{
+	padding-right: 10px;
+	display: inline-block;
+	float: right;
+	color: white;
+	text-align: right;
+	width: 30%;
+	top: 315%;
+	right: 0%;
+}
+
+@media screen and (max-width: 500px) {
+	.aboutUs{
+		font-size: 15px;
+	}
+	.minorLinks{
+		display: block;
+		position: absolute;
+		color: white;
+		text-align: center;
+		width: 30%;
+		top: 323%;
+	  left: 35%;
+		font-size: 15px;
+	}
+	.thanks{
+		
+		font-size: 15px;
+	}
+	
+}
+
+/* Reveal */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
