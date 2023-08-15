@@ -1,4 +1,4 @@
-# Building a Smart Car Trade-in Value Calculator Web Application
+# Building a Smart Car Trade-in Value ML Model Web Application
 
 In today's technologically advanced world, the convergence of machine learning and web development has paved the way for innovative and intelligent applications. In this article, we'll dive into the creation of a cutting-edge web application that combines the power of machine learning, web development, and cloud services. Our project showcases skills in HTML, CSS, JavaScript, Flask, SQL databases, and machine learning, all culminating in a user-friendly website that calculates accurate trade-in values for cars.
 
